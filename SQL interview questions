@@ -72,3 +72,65 @@ Q15. What types of indexes do you know?
 Ans. - Unique Index - doesn't allow duplicates in a table column and hence helps maintain data integrity.
 - Clustered index - Defines the physical order of records of a database table and performs data searching based on the key values. A table can have only one clustered index.
 - Non-Clustered Index - Keeps the order of the table records that doesn't match the physical order of the actual data on the disk. It means that the data is stored in one place and a non-clustered index - in another one. A table can have multiple non-clustered indexes.
+
+Q16. What is a join?
+Ans. A clause used to combine and retrieve records from two or multiple tables. SQL tables can be joined based on the relationship between the tables. Sql tables can be joined based on the relationship between the column of those tables. 
+
+Q17. What are the types of joins?
+Ans. Here are the different types of the JOINs in SQL:
+- INNER JOIN : Returns records that have matching values in both tables.
+- LEFT(OUTER) JOIN : Returns all records from the left table, and the matched records from the right table.
+- RIGHT(OUTER) JOIN : Returns all the records from the right table, and the matched records from the left table.
+- FULL(OUTER) JOIN : Returns all records when there is a match in either left or right table.
+
+Q.18. What is a schema?
+Ans. A collection of database sturctural elements such as tables, stored procedures, indexes, functions, and trigger. It shows the overall database architecture, specifies the relationships between various objects of a database, and defines different access permission for them.
+
+Q19. What is SQL operator?
+Ans. A reserved character, a combination of characters, or a keyword used in SQL queries to perform a specific operation. SQL operators are commonly used with the WHERE clause to set a condition (or conditions) for filtering the data.
+
+Q20. What types of SQL operators do you know?
+Ans. Arithmetic (+,-,*,/,%)
+Comparison (=,>,<,>=,<=,<>)
+Bitwise (&,|,^)
+Compound (+=,-=,*=,/+,%=,&=,^-=,|*=)
+Logical (AND, OR, NOT, BETWEEN, IN, LIKE, ANY, EXISTS)
+String (%,_,+,^)
+Set (UNION, UNION ALL, INTERSECT, MINUS)
+
+Q21. What is an alias?
+Ans. A temporary name given to a table (or a column in a table) while executing a certani SQL query. Aliases are used to improve the code readability and make the code more compact. An alias is introduced with the AS keyword.
+
+Q22. What is clause?
+Ans. A condition imposed on a SQL query to filter the data to obtain the desired result. Some example are WHERE, LIMIT, HAVING, LIKE, AND, OR, ORDER BY, etc.
+
+Q23. What is Data Integrity?
+Ans. Data Integrity is the assurance of accuracy and consistency of data over its entire life-cycle and is a critical aspect of the design, implementation, and usage of any system which stores, processes, or retrieves data. It also defines integrity constraints to enfore business rules on the data when it is entered into an application or a database.
+
+Q24. What is a Query?
+Ans. A query is a request for data or information from a database table or combination of tables. A database query can be either a select query or an action query.
+
+Q25. What is a Subquery? What are its types?
+Ans. A subquery is a query within another query, also known as a nested query or inner query. It is used to restrict or enhance the data to be queried by the main query, thus restricting or enhancing the output of the main query respectively. 
+
+Q26. What are Entites and Relationships?
+Ans.Entity: An entity can be a real-world object, either tangible or intangible, that can be easily identifiable. For example, in a college database, students, professors, workers, departments, and projects can be referred to as entities. Each entity has some associated properties that provide it an identity.
+
+Relationships: Relataions or links between entities that have something to do with each other. For example - The employee's table in a company's database can be associated with the salary table in the same database.
+
+Q27. List the different types of relationships in SQL?
+Ans.
+- One-to-one - This can be defined as the relationship between two tables where each record in one table is associated with maximum of one record in the other table.
+- One-to-Many & Many-to-One - This is the most commonly used relationship where a record in a table is associated with multiple records in the other table.
+- Many-to-Many - This is used in cases when multiple instances on both sides are needed for defining a relatioship.
+- Self-Referencing Relationships - This is used when a table needs to define a relationship with itself.
+
+Q28. What is a View?
+Ans. A view in SQL is a virtual table based on the result-set of an SQL statement. A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
+
+Q29. What is Normalization?
+Ans. Normalizaiton represents the way of organizing structured data in the database efficiently. It includes the creation of tables, establishing relationships between them, and defining rules for those relationships. Inconsistency and redundancy can be kept in check based on these rules, hence, adding flexiblity to the database.
+
+Q30. What is Denormalization?
+Ans. Denormalization is the inverse process of normalization, where the normalized schema is converted into a schema that has redundant information. The performance is improved by using redundancy and keeping the redundant data consistent. The reason for performing denormalization is the overheads produced in the query processor by an over-normalized structure.
+
